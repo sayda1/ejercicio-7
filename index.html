@@ -2,10 +2,42 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="bootstrap.css">
+    <title> Smile</title>
 </head>
 <body>
-    
+	<div class="container">
+        <h1 class="text-center">Monitos</h1>
+	    <div class="row">
+	        <div class="col-md-4">
+	          <label for="dia" style="color:pink; font-size:17px">aSmile</label> <br>
+				<select class="form-control" id="mono_a">
+				    <option value="1">triste</option>
+				    <option value="2">alegre</option>
+                </select>
+	        </div>
+	        
+	        <div class="col-md-4">
+	            <div class="form-group">
+					<label for="vacaciones" style="color:pink; font-size:17px">bSmile</label> <br>
+					<select class="form-control" id="mono_b">
+						<option value="1">triste</option>
+						<option value="2">alegre</option>
+					</select>
+				</div>
+	        </div>
+	        <div class="col-md-4">
+	            <div class="text-center">
+                <button onclick="evaluar()" class="btn btn-primary" style="margin:10px 0px">Evaluar</button>
+                    <h4 class="text-info">¿Problemas?</h4>
+                    <div id="salida" style="fosnt-size:50px;"></div>
+	            </div> 
+	        </div>
+	    </div>
+	</div>
 </body>
 <script src="main.js"></script>
 </html>
+
